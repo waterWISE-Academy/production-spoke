@@ -1,0 +1,16 @@
+name: M2M Protocol Spoke Caller
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  Call_Hub_CI:
+    uses: waterWISE-Academy/m2m-core-skill/.github/workflows/m2m-protocol.yml@v2.3
+    with:
+      m2m_version: '2.3'
+      worker_agent: 'antigravity'
+    secrets:
+      ORG_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
