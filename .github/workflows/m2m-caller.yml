@@ -13,4 +13,4 @@ jobs:
       m2m_version: '2.3'
       worker_agent: 'antigravity'
     secrets:
-      ORG_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ORG_GITHUB_TOKEN: ${{ secrets.ORG_GITHUB_TOKEN }}
