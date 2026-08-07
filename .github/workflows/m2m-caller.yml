@@ -8,7 +8,7 @@ on:
 
 jobs:
   Call_Hub_CI:
-    uses: waterWISE-Academy/m2m-core-skill/.github/workflows/m2m-protocol.yml@v2.3
+    uses: waterWISE-Academy/m2m-core-skill/.github/workflows/m2m-protocol.yml@main
     with:
       m2m_version: '2.3'
       worker_agent: 'antigravity'
